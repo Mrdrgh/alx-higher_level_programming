@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-def uppercase(c):
-    if ord(c) < 65 or ord(c) > 65 + 26:
-        return (False)
-    return (True)
+def uppercase(str):
+    for i in str:
+        if i > 97 and i < 97 + 26:
+            i = i - 32
+            print("{}".format(i), end="")
+    print(end="\n")
