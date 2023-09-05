@@ -1,6 +1,10 @@
 #!/usr/bin/python3
-def c_mod(a, b):
-    return a - b * int(a / b)
 def print_last_digit(number):
-    print("{}".format(c_mod(number, 10)), end="")
-    return (c_mod(number, 10))
+    pos_nbr = 0
+    if number < 0:
+        pos_nbr = -number
+    else:
+        pos_nbr = number
+    mod = pos_nbr % 10
+    print("{}".format(mod), end="")
+    return ()
