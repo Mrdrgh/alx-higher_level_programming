@@ -22,5 +22,7 @@ listint_t *insert_node(listint_t **head, int number)
 			return (new_member);
 		}
 	}
-	return (NULL);
+	temp->next = new_member;
+	new_member->next = NULL;
+	return (new_member);
 }
