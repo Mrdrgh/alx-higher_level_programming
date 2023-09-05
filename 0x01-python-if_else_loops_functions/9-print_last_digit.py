@@ -7,4 +7,4 @@ def print_last_digit(number):
         pos_nbr = number
     mod = pos_nbr % 10
     print("{}".format(mod), end="")
-    return ()
+    return (mod)
