@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
     import sys
+    j = 1
     length = len(sys.argv)
     if length == 1:
         print("{} arguments".format(length - 1))
@@ -8,5 +9,6 @@ if __name__ == "__main__":
         print("{} argument".format(length - 1))
     else:
         print("{} arguments:".format(length - 1))
-    for i, arg in enumerate(sys.argv[1:]):
-        print("{}: {}".format(i, arg))
+    for i in sys.argv[1:]:
+        print("{}: {}".format(j, sys.argv[j]))
+        j += 1
