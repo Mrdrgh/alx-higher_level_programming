@@ -29,6 +29,8 @@ int is_palindrome(listint_t **head)
 {
     listint_t *new_list = NULL, *current, *current_2;
 
+    if (!*head || !(*head)->next)
+        return (1);
     current = *head;
     while (current)
     {
