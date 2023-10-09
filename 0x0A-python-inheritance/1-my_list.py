@@ -8,4 +8,4 @@ class Mylist(list):
         list (list): the list inherited"""
     def print_sorted(self):
         """print sorted this list"""
-        print("{}".format(sorted(list)))
+        print("{}".format(sorted(self)))
