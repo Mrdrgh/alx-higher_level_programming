@@ -16,7 +16,7 @@ INSERT INTO second_table
         1,
         "John",
         10
-    )
+    ),
     (
         2,
         "Alex",
