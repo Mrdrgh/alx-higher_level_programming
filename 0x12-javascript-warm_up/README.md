@@ -1,0 +1,1 @@
+#ENTRY TO JS
